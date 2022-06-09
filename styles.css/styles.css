@@ -1,0 +1,81 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  background-color: aliceblue;
+  font-size: 1em;
+  text-align: center;
+}
+h1 {
+  font-size: clamp(2.5rem, 2.9vw, 3.4rem);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: #c59d5f;
+}
+article {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  margin-bottom: 2rem;
+}
+
+.question-text {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2em;
+  padding-top: 0.8em;
+}
+.question-text p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.question-btn {
+  font-size: 1.8rem;
+  background: transparent;
+  border: transparent;
+  color: rgb(2, 89, 251);
+}
+.question-btn:hover {
+  transform: rotate(90deg);
+  opacity: 0.7;
+  transition: all 0.28s linear;
+}
+
+.text {
+  border-top: 1px solid rgb(2, 89, 251);
+}
+.text p {
+  padding-top: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #222;
+}
+/* hide text */
+
+.text {
+  display: none;
+}
+.show-text .text {
+  display: block;
+}
+.minus-btn {
+  display: none;
+}
+.show-text .minus-btn {
+  display: inline-block;
+}
+.show-text .plus-btn {
+  display: none;
+}
